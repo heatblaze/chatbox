@@ -1,5 +1,52 @@
 {
   "questions": [
-    
-  ]
+    {
+   "name": "greet",
+    "examples": [
+        "Hello",
+        "Hi",
+        "Good morning"
+    ]
+},
+{
+"name": "farewell",
+"examples": [
+    "Goodbye",
+    "See you later",
+    "Take care"
+]
 }
+],
+"entities": [],
+"responses": [
+    {
+"message": "Hello! How can I help you?",
+"parameters": []
+},
+{
+"message": "Goodbye! Have a great day!",
+"parameters": []
+}
+],
+"context": [],
+"dialogue": [
+    {
+"name": "greet_farewell",
+"steps": [
+    {
+        "intent": "greet"
+    },
+    {
+        "response": "Hello! How can I help you?"
+    },
+    {
+        "intent": "farewell"
+    },
+    {
+        "response": "Goodbye! Have a great day!"
+    }
+]
+}
+]
+}
+
